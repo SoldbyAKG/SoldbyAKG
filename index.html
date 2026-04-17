@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sold by AKG</title>
+  <style>
+    :root {
+      --turquoise: #1abc9c;
+      --red: #e74c3c;
+      --dark: #1f2933;
+      --light: #f9fafb;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--light);
+      color: var(--dark);
+    }
+
+    header {
+      background: linear-gradient(90deg, var(--turquoise), var(--red));
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: white;
+      padding: 1rem;
+    }
+
+    nav a { text-decoration: none; color: var(--dark); font-weight: bold; }
+
+    .hero { text-align: center; padding: 3rem 1rem; }
+
+    .btn {
+      display: inline-block;
+      background: var(--turquoise);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+
+    .section { padding: 2rem; max-width: 1000px; margin: auto; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Sold by AKG</h1>
+  <p>Premium reselling solutions</p>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#deals">Hot Deals</a>
+  <a href="#products">What We Sell</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+  <h2>Grow Your Reselling Business</h2>
+  <p>High-demand products. Fast deals.</p>
+  <a href="#contact" class="btn">Get Started</a>
+</section>
+
+<section id="deals" class="section">
+  <h2>Hot Deals</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Limited Drops</h3>
+      <p>Exclusive items available now.</p>
+      <a href="https://example.com/deals" class="btn" target="_blank">View Deals</a>
+    </div>
+    <div class="card">
+      <h3>Top Picks</h3>
+      <p>Best selling items right now.</p>
+      <a href="https://example.com/top" class="btn" target="_blank">View Picks</a>
+    </div>
+  </div>
+</section>
+
+<section id="products" class="section">
+  <h2>What We Sell</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Car Accessories</h3>
+      <p>Upgrade your vehicle.</p>
+      <a href="https://example.com/car" class="btn" target="_blank">Shop</a>
+    </div>
+    <div class="card">
+      <h3>Electronics</h3>
+      <p>Latest gadgets.</p>
+      <a href="https://example.com/electronics" class="btn" target="_blank">Shop</a>
+    </div>
+    <div class="card">
+      <h3>Fitness</h3>
+      <p>Stay active.</p>
+      <a href="https://example.com/fitness" class="btn" target="_blank">Shop</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact Us</h2>
+  <p>Email or call us directly:</p>
+
+  <p>
+    📧 <a href="mailto:soldbyakg@gmail.com">soldbyakg@gmail.com</a><br>
+    📞 <a href="tel:+1234567890">+1 437 225 5145</a>
+  </p>
+
+  <h3>Quick Message</h3>
+  <form action="mailto:soldbyakg@gmail.com" method="POST" enctype="text/plain">
+    <input type="text" name="name" placeholder="Your Name" required><br><br>
+    <input type="email" name="email" placeholder="Your Email" required><br><br>
+    <textarea name="message" rows="4" placeholder="Your Message"></textarea><br><br>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Sold by AKG</p>
+</footer>
+
+</body>
+</html>
